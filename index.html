@@ -14,13 +14,13 @@
 html{scroll-behavior:smooth;scroll-padding-top:20px}
 body{margin:0;font:14px/1.6 Montserrat,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--text)}
 a{color:var(--blue)}
-.top{background:#fff;padding:10px 40px}
-.top img{height:44px;width:auto;display:block}
-.hero{background:var(--blue);color:#fff;padding:36px 40px 40px}
+.top{background:#fff;padding:12px 20px;text-align:center}
+.top img{height:48px;width:auto;display:inline-block}
+.hero{background:var(--blue);color:#fff;padding:36px 40px 40px;text-align:center}
 .hero h1{margin:0 0 6px;font-size:30px;font-weight:700;letter-spacing:.01em}
 .hero p{margin:0;font-size:13px;color:#dbe6f6}
-.chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
-.chip{background:rgba(255,255,255,.14);border-left:4px solid var(--orange);padding:8px 14px;min-width:150px}
+.chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px;justify-content:center}
+.chip{background:rgba(255,255,255,.14);border-left:4px solid var(--orange);padding:8px 14px;min-width:150px;text-align:left}
 .chip small{display:block;font-size:11px;color:#dbe6f6}
 .chip strong{font-size:14px;font-weight:600}
 .menu{background:#fff;border-bottom:1px solid var(--line);padding:14px 20px;text-align:center}
@@ -44,6 +44,8 @@ th{text-align:left;color:var(--blue);font-weight:600;padding:8px 6px;border-bott
 td{padding:8px 6px;border-bottom:1px solid var(--line)}
 .plan{max-width:420px;width:100%;height:auto;border:1px solid var(--line);display:block}
 .plan-ph{max-width:420px;aspect-ratio:16/9;border:1px dashed #bbb;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic;background:#fafafa}
+.machines th,.machines td{width:50%}
+.warn{margin:14px 0 0;color:#d4180f;font-weight:600}
 .cap{font-size:12px;color:var(--muted);margin-top:6px}
 .partner{display:flex;gap:22px;align-items:center;flex-wrap:wrap;border-left:4px solid var(--orange);background:#fafafa;padding:14px 18px}
 .partner img{max-height:60px;width:auto}
@@ -140,9 +142,21 @@ footer a{color:#fff}
   <p>Informationen für Besucher: <a href="https://swissdemopark.ch/besucher" target="_blank" rel="noopener">swissdemopark.ch/besucher</a></p>
 </section>
 
-<section class="card" id="maschinen">
+<section class="card full" id="maschinen">
   <h2>Maschinenliste</h2>
-  <p><span class="todo">Informationen folgen</span></p>
+  <table class="machines">
+    <thead><tr><th>Sondi</th><th>Heini</th></tr></thead>
+    <tbody>
+      <tr><td>TSM Aria</td><td>Solis 26 Kabine</td></tr>
+      <tr><td>TSM Itala</td><td>Solis 26 ROPS</td></tr>
+      <tr><td>FZ mit Rontex und Salee Sprüher</td><td>Yanmar YT</td></tr>
+      <tr><td>Dibo Trailer</td><td>KX Greifer Show-Tower</td></tr>
+      <tr><td>Keckex Mobi</td><td>Riko Streuer</td></tr>
+      <tr><td>Keckex Jespi</td><td>Wintec Vario Schneepflug?</td></tr>
+      <tr><td>Keckex Plattform mit Frontanbau</td><td></td></tr>
+    </tbody>
+  </table>
+  <p class="warn">!! Keckexgeräte gemeinsam abstimmen, wer was mitnimmt.</p>
 </section>
 
 <section class="card" id="material">
